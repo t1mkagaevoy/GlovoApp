@@ -1,0 +1,11 @@
+Welcome to the Glovo app!
+Please select an option:
+1. Order Food
+2. Order Groceries
+3. Send Package
+Enter your choice (1/2/3): 1
+You chose to order food.
+Enter the details of your food: Pizza with extra cheese
+Processing your food order...
+Order details: Pizza with extra cheese
+Your food is on the way! Estimated delivery time: 30 minutes.
