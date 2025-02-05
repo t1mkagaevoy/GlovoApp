@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+class GlovoApp {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Welcome to the Glovo app!");
+        System.out.println("Please select an option:");
+        System.out.println("1. Order Food");
+        System.out.println("2. Order Groceries");
+        System.out.println("3. Send Package");
+        System.out.print("Enter your choice (1/2/3): ");
+        
+        int choice = scanner.nextInt();
+        scanner.nextLine();  // consume the newline character
+        
+        switch (choice) {
+            case 1:
+                placeOrder("food");
+                break;
+            case 2:
+                placeOrder("groceries");
+                break;
+            case 3:
+                placeOrder("package");
+                break;
+            default:
+                System.out.println("Invalid choice. Please try again.");
+                break;
+        }
+        
+        scanner.close();
+    }
+    
+    public static void placeOrder(String orderType) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("You chose to order " + orderType + ".");
+        System.out.print("Enter the details of your " + orderType + ": ");
+        String details = scanner.nextLine();
+        
+        // Simulate order confirmation
+        System.out.println("\nProcessing your " + orderType + " order...");
+        System.out.println("Order d
